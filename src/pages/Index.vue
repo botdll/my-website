@@ -6,7 +6,7 @@
         <div class="text-green-700 leading-tight">Powered by Vue.js &amp; Tailwind v1</div>
       </div>
       <div class="mt-8 sm:mt-0">
-        <g-image src="../../static/hero.svg" alt="hero" class="mx-auto sm:mx-0" />
+        <g-image src="~/hero.svg" alt="hero" class="mx-auto sm:mx-0" />
       </div>
     </div> <!-- end hero -->
 
