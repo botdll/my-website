@@ -12,6 +12,7 @@ const postcssPlugins = [
 
 module.exports = {
   siteName: 'George Tsilikas | My Website',
+  icon: './src/images/favicon.png',
   plugins: [],
   css: {
       loaderOptions: {
