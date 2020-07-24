@@ -2,8 +2,8 @@
   <Layout>
     <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
-        <div class="leading-tight">Gridsome Portfolio Starter</div>
-        <div class="text-green-700 leading-tight">Powered by Vue.js &amp; Tailwind v1</div>
+        <div class="leading-tight">Hello my name is George</div>
+        <div class="text-blue-600 leading-tight">and I am a Web Developer</div>
       </div>
       <div class="mt-8 sm:mt-0">
         <g-image src="https://res.cloudinary.com/botdll01/image/upload/v1594932638/hero.svg" alt="hero" class="mx-auto sm:mx-0" />
@@ -11,7 +11,7 @@
     </div> <!-- end hero -->
 
     <div class="container-inner mx-auto">
-      <p class="text-lg sm:text-xl">This gridsome theme was forked from my <a href="https://andremadarang.com">personal website</a>. I added more features and decided to release it as an open source project. Check it out on <a href="https://github.com/drehimself/gridsome-portfolio-starter">GitHub</a> or check out the <a href="https://www.youtube.com/watch?v=uHo6o1TNQeE">screencast I did</a>. Feel free to use it for your own site or projects! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, repellat. Dolores iure, quas perspiciatis rerum quaerat atque eum repellat autem.</p>
+      <p class="text-lg sm:text-xl">Hey there! I like to create exciting things usually with javascript. I really enjoy VueJS</p>
 
       <div class="flex justify-between items-center py-6">
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
@@ -25,11 +25,15 @@
 
 
 
-    <div class="overflow-x-hidden border-gray-200 border-b">
+    <div class="overflow-x-hidden border-gray-200 border-b border-t">
       <div class="get-to-know-me container-inner mx-auto text-xl pb-16 relative">
-        <h2 class="font-bold mb-6" id="about">Get to know me:</h2>
+        <h2 class="font-bold mb-6 mt-6" id="about">Get to know me:</h2>
 
         <div class="absolute left-0" style="top: 50px; transform: translateX(-100%)">
+          <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
+        </div>
+
+        <div class="absolute right-0" style="transform: translate(100%) rotate(180deg)">
           <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
         </div>
 
@@ -47,12 +51,7 @@
       <div class="contact-me bg-background-secondary pt-16">
         <div class="container-inner mx-auto text-xl pb-4 relative">
           <h2 class="font-bold mb-6" id="contact">Contact me:</h2>
-
-          <div class="absolute right-0 top-0" style="transform: translate(100%) rotate(180deg)">
-            <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
-          </div>
-
-          <p class="mb-12">Static sites cannot submit forms on their own. However, services like <a href="https://www.netlify.com/docs/form-handling">Netlify Forms</a> or <a href="https://formspree.io">FormSpree</a> can help you do this without a backend.</p>
+          <p class="mb-12">Drop me a message if you have a business inquiry, a question or you just want to say Hi! I will get back to you as soon as possible.</p>
 
           <div class="text-lg sm:text-lg mb-16">
             <form method="POST" class="mb-12" name="contact" netlify netlify-honeypot="bot-field">
@@ -65,7 +64,7 @@
                           Name
                       </label>
 
-                      <input type="text" name="name" id="name" placeholder="Jon Snow" class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4" required>
+                      <input type="text" name="name" id="name" placeholder="Jon Snow" class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-600 mb-2 p-4" required>
                   </div>
 
                   <div class="w-full px-4 md:w-1/2">
@@ -73,7 +72,7 @@
                           Email Address
                       </label>
 
-                      <input type="email" name="email" id="email" placeholder="email@example.com"  class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4" required>
+                      <input type="email" name="email" id="email" placeholder="email@example.com"  class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-600 mb-2 p-4" required>
                   </div>
               </div>
 
@@ -82,11 +81,11 @@
                       Message
                   </label>
 
-                  <textarea id="message" rows="5" name="message" class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-green-700 mb-2 px-4 py-4" placeholder="Enter your message here." required></textarea>
+                  <textarea id="message" rows="5" name="message" class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-blue-600 mb-2 px-4 py-4" placeholder="Enter your message here." required></textarea>
               </div>
 
               <div class="flex justify-end w-full">
-                  <input type="submit" value="Submit" class="block bg-green-700 hover:bg-green-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3">
+                  <input type="submit" value="Submit" class="block bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3">
               </div>
             </form>
           </div>

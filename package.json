@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "gridsome": "^0.7.0",
+    "gridsome-plugin-modal": "^0.1.1",
     "tailwindcss": "^1.4.6",
     "vue-scrollto": "^2.18.1"
   }

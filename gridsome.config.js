@@ -12,7 +12,9 @@ const postcssPlugins = [
 
 module.exports = {
   siteName: 'George Tsilikas | My Website',
-  plugins: [],
+  plugins: [{
+    use: 'gridsome-plugin-modal'
+  }],
   css: {
       loaderOptions: {
           postcss: {

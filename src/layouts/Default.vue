@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen">
-    <header class="border-t-14 border-green-700">
+    <header class="border-t-14 border-blue-600">
       <nav class="container mx-auto flex flex-wrap justify-between items-center py-8">
         <div>
           <g-link to="/"><g-image src="https://res.cloudinary.com/botdll01/image/upload/v1594932638/logo.png" class="w-40" alt="logo" /></g-link>
@@ -15,7 +15,7 @@
           :class="isOpen ? 'block': 'hidden'"
         >
           <li>
-            <p>CV</p>
+            <button @click="show" class="text-copy-primary hover:text-gray-600">CV</button>
           </li>
           <li>
             <a v-if="$route.path === '/'" href="/#about" v-scroll-to="'#about'" class="text-copy-primary hover:text-gray-600">About</a>
@@ -29,11 +29,15 @@
       </nav>
     </header>
 
+    <modal name="jsonCV" :adaptive="true" :height="620">
+      <g-image src="https://res.cloudinary.com/botdll01/image/upload/v1595212318/cv.png" alt="cv"></g-image>              
+    </modal>
+
     <div class="flex-grow">
       <slot/>
     </div>
 
-    <footer class="bg-green-700 text-white">
+    <footer class="bg-blue-600 text-white">
       <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
         <div class="mb-8 lg:mb-0">
           <div>Copyright {{ new Date().getFullYear() }}. All rights reserved.</div>
@@ -70,6 +74,9 @@ export default {
   methods: {
     toggle() {
       this.isOpen = !this.isOpen
+    },
+    show() {
+      this.$modal.show('jsonCV')
     }
   }
 }
