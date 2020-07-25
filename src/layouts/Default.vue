@@ -29,9 +29,16 @@
       </nav>
     </header>
 
-    <modal name="jsonCV" :adaptive="true" :height="620">
-      <g-image src="https://res.cloudinary.com/botdll01/image/upload/v1595212318/cv.png" alt="cv"></g-image>              
-    </modal>
+    <!-- <div class="h-auto flex items-center justify-center rounded shadow w-2/4">
+      <g-image src="https://res.cloudinary.com/botdll01/image/upload/v1595212318/cv.png" alt="CV" />
+    </div> -->
+
+    <!-- <ClientOnly> -->
+      <modal name="jsonCV" :adaptive="true" :height="620">
+        <g-image src="https://res.cloudinary.com/botdll01/image/upload/v1595212318/cv.png" alt="cv" />              
+      </modal>
+    <!-- </ClientOnly> -->
+
 
     <div class="flex-grow">
       <slot/>

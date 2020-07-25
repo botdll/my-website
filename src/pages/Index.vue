@@ -2,8 +2,8 @@
   <Layout>
     <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
-        <div class="leading-tight">Hello my name is George</div>
-        <div class="text-blue-600 leading-tight">and I am a Web Developer</div>
+        <div class="leading-tight">Freelancer</div>
+        <div class="text-blue-600 leading-tight">Web Developer</div>
       </div>
       <div class="mt-8 sm:mt-0">
         <g-image src="https://res.cloudinary.com/botdll01/image/upload/v1594932638/hero.svg" alt="hero" class="mx-auto sm:mx-0" />
@@ -11,7 +11,7 @@
     </div> <!-- end hero -->
 
     <div class="container-inner mx-auto">
-      <p class="text-lg sm:text-xl">Hey there! I like to create exciting things usually with javascript. I really enjoy VueJS</p>
+      <p class="text-lg sm:text-xl">Hey there! My name is George and I like to create exciting things usually with JavaScript. I really enjoy VueJS and I used it to create this website.To be more precise this website was created with Gridsome and TailwindCSS. I am currently open for business opportunities so if you want to contact me use the form below and send me a message.</p>
 
       <div class="flex justify-between items-center py-6">
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
@@ -30,18 +30,18 @@
         <h2 class="font-bold mb-6 mt-6" id="about">Get to know me:</h2>
 
         <div class="absolute left-0" style="top: 50px; transform: translateX(-100%)">
-          <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
+          <svg width="170px" height="170px"><use href="#dots-triangle" /></svg>
         </div>
 
         <div class="absolute right-0" style="transform: translate(100%) rotate(180deg)">
-          <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
+          <svg width="170px" height="170px"><use href="#dots-triangle" /></svg>
         </div>
 
         <div class="flex flex-col sm:flex-row justify-between items-center mb-16">
           <div>
             <g-image src="https://res.cloudinary.com/botdll01/image/upload/v1594932642/avatar.jpg" alt="avatar" class="w-32 h-32 object-cover rounded-full mb-8 lg:mb-0" />
           </div>
-          <div class="flex-1 text-lg sm:text-xl ml-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quae architecto minus molestias iusto ducimus fuga quo quia libero dignissimos, fugiat modi assumenda debitis laboriosam.</div>
+          <div class="flex-1 text-lg sm:text-xl ml-6">I am located in Greece but open for worldwide opportunities. I have a bachelor's in Business Administration and a Master's in Informatics. I really enjoy Web Development and especially JavaScript. Currently I am mostly focused on VueJS and its ecosytem but I always like to explore new things as programming is a science that is changing rapidly.</div>
         </div>
 
       </div> <!-- end get-to-know me -->

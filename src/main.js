@@ -4,15 +4,18 @@
 // Import global styles
 require('~/main.css')
 
-import DefaultLayout from '~/layouts/Default.vue'
+import DefaultLayout from '@/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
-import VModal from 'vue-js-modal'
+// import VModal from 'vue-js-modal'
+// import VModal from 'vue-js-modal/dist/index.nocss.js'
+// import 'vue-js-modal/dist/styles.css'
+// import 'vue-js-modal/dist/ssr.index'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 
-  Vue.use(VModal, {dialog: true})
+  // Vue.use(VModal)
 
   Vue.use(VueScrollTo, {
     duration: 500,

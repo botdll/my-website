@@ -12,9 +12,13 @@ const postcssPlugins = [
 
 module.exports = {
   siteName: 'George Tsilikas | My Website',
-  plugins: [{
-    use: 'gridsome-plugin-modal'
-  }],
+  siteUrl: 'www.tsilikas.xyz',
+  siteDescription: 'A portfolio-personal website made with Gridsome and TailwindCSS',
+  plugins: [
+    {
+      use: 'gridsome-plugin-modal'
+    }
+  ],
   css: {
       loaderOptions: {
           postcss: {
