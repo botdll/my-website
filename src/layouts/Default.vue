@@ -15,9 +15,9 @@
           :class="isOpen ? 'block': 'hidden'"
         >
           <li>
-            <!-- <button @click="show" class="text-copy-primary hover:text-gray-600">CV</button> -->
-            <a @click="showModal" v-if="$route.path === '/'" href="/#modal" class="text-copy-primary hover:text-gray-600">CV</a>
-            <g-link @click="showMOdal" v-else to="/#modal" class="text-copy-primary hover:text-gray-600">CV</g-link>
+            <button @click="showModal" class="text-copy-primary hover:text-gray-600">CV</button>
+            <!-- <a @click="showModal" v-if="$route.path === '/'" href="/#modal" class="text-copy-primary hover:text-gray-600">CV</a>
+            <g-link @click="showMOdal" v-else to="/#modal" class="text-copy-primary hover:text-gray-600">CV</g-link> -->
           </li>
           <li>
             <a v-if="$route.path === '/'" href="/#about" v-scroll-to="'#about'" class="text-copy-primary hover:text-gray-600">About</a>
