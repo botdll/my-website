@@ -29,16 +29,9 @@
       </nav>
     </header>
 
-    <!-- <div class="h-auto flex items-center justify-center rounded shadow w-2/4">
-      <g-image src="https://res.cloudinary.com/botdll01/image/upload/v1595212318/cv.png" alt="CV" />
-    </div> -->
-
-    <!-- <ClientOnly> -->
-      <modal name="jsonCV" :adaptive="true" :height="620">
-        <g-image src="https://res.cloudinary.com/botdll01/image/upload/v1595212318/cv.png" alt="cv" />              
-      </modal>
-    <!-- </ClientOnly> -->
-
+  <modal name="jsonCV" :adaptive="true" :height="620">
+    <g-image src="https://res.cloudinary.com/botdll01/image/upload/v1595212318/cv.png" alt="cv" />              
+  </modal>
 
     <div class="flex-grow">
       <slot/>
@@ -85,6 +78,9 @@ export default {
     show() {
       this.$modal.show('jsonCV')
     }
+  },
+  mounted() {
+    this.$modal.hide('jsonCV')
   }
 }
 </script>
