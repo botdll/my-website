@@ -15,7 +15,9 @@
           :class="isOpen ? 'block': 'hidden'"
         >
           <li>
-            <button @click="show" class="text-copy-primary hover:text-gray-600">CV</button>
+            <!-- <button @click="show" class="text-copy-primary hover:text-gray-600">CV</button> -->
+            <a @click="showModal" v-if="$route.path === '/'" href="/#modal" class="text-copy-primary hover:text-gray-600">CV</a>
+            <g-link @click="showMOdal" v-else to="/#modal" class="text-copy-primary hover:text-gray-600">CV</g-link>
           </li>
           <li>
             <a v-if="$route.path === '/'" href="/#about" v-scroll-to="'#about'" class="text-copy-primary hover:text-gray-600">About</a>
@@ -29,7 +31,7 @@
       </nav>
     </header>
 
-  <modal name="jsonCV" :adaptive="true" :height="620">
+  <modal id="modal" name="jsonCV" :adaptive="true" :height="620">
     <g-image src="https://res.cloudinary.com/botdll01/image/upload/v1595212318/cv.png" alt="cv" />              
   </modal>
 
@@ -69,18 +71,22 @@ query {
 <script>
 export default {
   data: () => ({
-    isOpen: false
+    isOpen: false,
+    show: false
   }),
   methods: {
     toggle() {
       this.isOpen = !this.isOpen
     },
-    show() {
+    showModal() {
       this.$modal.show('jsonCV')
+    },
+    hideModal() {
+      this.$modal.hide('jsonCV')
     }
   },
   mounted() {
-    this.$modal.hide('jsonCV')
+    this.hideModal()
   }
 }
 </script>
