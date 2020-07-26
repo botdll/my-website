@@ -2,8 +2,8 @@
   <Layout>
     <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
-        <div class="leading-tight">Freelancer</div>
-        <div class="text-blue-600 leading-tight">Web Developer</div>
+        <div class="leading-tight">Under Contruction...</div>
+        <div class="text-blue-600 leading-tight">*form below is active*</div>
       </div>
       <div class="mt-8 sm:mt-0">
         <g-image src="https://res.cloudinary.com/botdll01/image/upload/v1594932638/hero.svg" alt="hero" class="mx-auto sm:mx-0" />
