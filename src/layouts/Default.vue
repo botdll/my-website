@@ -31,7 +31,7 @@
       </nav>
     </header>
 
-  <modal id="modal" name="jsonCV" :adaptive="true" :height="620">
+  <modal name="jsonCV" :adaptive="true" :height="620">
     <g-image src="https://res.cloudinary.com/botdll01/image/upload/v1595212318/cv.png" alt="cv" />              
   </modal>
 
@@ -85,7 +85,7 @@ export default {
       this.$modal.hide('jsonCV')
     }
   },
-  mounted() {
+  beforeMount() {
     this.hideModal()
   }
 }
